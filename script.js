@@ -91,6 +91,7 @@ let start = () => {
 }
 //Function to fetch image from API with the recieved URL
 let populateImages = (url, searchUrl) => {
+    slides = null
     fetch(url, searchUrl)
         .then(res => res.json())
         .then(res => {
